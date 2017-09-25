@@ -1,0 +1,58 @@
+body {
+	font-family: arial;
+	font-size: 1.3em;
+	margin:8px;
+	padding: 0;
+    width:95%;
+}
+
+a {
+	color: #000;
+	text-decoration: none
+}
+
+a.visited {
+	color: #fff
+}
+
+img {
+    border-style: none;
+}
+
+h2 a {
+	display: inline;
+	float: left;
+	font-size: 20px
+}
+
+
+input.radiobtn {
+    margin-bottom:1px;
+    margin-right:3px;
+    margin-left:3px;
+}
+
+#contentKeeper {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 730px;
+	height: 300px;
+	margin: -150px 0 0 -365px;
+}
+#bottom img {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+
+span.inputfelter {
+	background:#eaeaea;
+	white-space:nowrap;
+}
+
+span.inputfelter input {
+  background:#eaeaea;
+  margin:0;padding:0;
+  }

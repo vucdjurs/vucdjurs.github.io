@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>
+			Visitationstest
+		</title>
+		<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-2">
+		<meta NAME="lang" CONTENT="da">
+		<meta NAME="keywords" CONTENT="">
+		<meta NAME="description" CONTENT="">
+		<meta NAME="author" CONTENT="">
+		<meta NAME="generator" CONTENT="">
+		<meta NAME="DC.Title" CONTENT="">
+		<meta NAME="DC.Description" CONTENT="">
+		<meta NAME="DC.Date" CONTENT="2006-01-05" >
+		<meta NAME="DC.Language" CONTENT="dan">
+		<meta NAME="DC.Country" CONTENT="dk">
+		<style type="text/css" media="screen">
+			@import "ob.css";
+		</style>
+		<style type="text/css" media="print">
+			@import "ob-print.css";
+		</style>
+<script type="text/javascript">
+var elevnavn ="J. Christiansen";
+var cpr = "050158-0137";
+var usted ="Testskolen";
+var Test1Korrekte=21;
+var Test4Korrekte=10;
+var Test3Korrekte=18;
+var danishmonths = ["januar", "februar", "marts", "april", "maj", "juni",
+"juli", "august", "september", "oktober", "november", "december"];
+function datostr() {
+var dt = new Date();
+return (new String (dt.getDate()+". "+(danishmonths[dt.getMonth()])+" "+dt.getFullYear()));
+}
+function pointres(o1,o2) {
+return ((o1/2)+o2);
+}
+var isReady = false;
+function doSaveAs() {
+if (document.execCommand) {
+if (isReady) {
+document.execCommand("SaveAs");
+}
+}
+}
+if (typeof window.event != 'undefined')
+document.onkeydown = function()
+{
+if (event.srcElement.tagName.toUpperCase() != 'INPUT')
+return (event.keyCode != 8);
+}
+else
+document.onkeypress = function(e)
+{
+if (e.target.nodeName.toUpperCase() != 'INPUT')
+return (e.keyCode != 8);
+}
+</script>
+		<body onload="isReady=true">
+			<div id="resultKeeper">
+			<h1 class="print-only">Visitationstest</h1>
+				<h2>
+					Testresultat for
+<script type="text/javascript">document.write(elevnavn)</script>,
+<script type="text/javascript">document.write(cpr)</script></h2>
+				<h3>
+					Dato:
+<script type="text/javascript">document.write(datostr())</script></h3>
+				<h3>
+					Institution:
+<script type="text/javascript">document.write(usted)</script></h3>
+				<h2>Resultat af deltest</h2>
+				<table border="0" id="table1" cellspacing="0" cellpadding="0" class="resultat"">
+					<tr>
+						<td >
+							Test O1 - Ordl&aelig;sning:
+						</td>
+						<td >
+<script type="text/javascript">document.write(Test1Korrekte)</script>
+							rigtige ud af 38
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Test O2 - Stavning:
+						</td>
+						<td>
+<script type="text/javascript">document.write(Test4Korrekte)</script>
+							rigtige ud af 20
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Test O3 - Ordforr&aring;d:
+						</td>
+						<td>
+<script type="text/javascript">document.write(Test3Korrekte)</script>
+							rigtige ud af 40
+						</td>
+					</tr>
+				</table>
+				<h2>Visitationsscore</h2>
+				<table border="0" id="table2" cellspacing="0" cellpadding="0" class="resultat"">
+					
+					<tr>
+						<td >
+							Test O1 og test O2:
+						</td>
+						<td >
+<script type="text/javascript">document.write(pointres(Test1Korrekte,Test4Korrekte))</script>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							Test O3:
+						</td>
+						<td>
+<script type="text/javascript">document.write(Test3Korrekte)</script>
+						</td>
+					</tr>
+					
+				</table>
+				<hr class="display-only"/>
+				
+				<p align="center" class="display-only">
+					<span class="visiblelink">
+						<a href="javascript: this.print()">Udskriv testresultatet</a>
+						<br />
+						<br />
+						<a href="credits.html">Om Visitationstesten</a>
+					</span>
+				</p>
+				<h2 class="print-only">Bem&aelig;rkninger fra testtager</h2>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+			</div>
+		</body>
+</html>
+

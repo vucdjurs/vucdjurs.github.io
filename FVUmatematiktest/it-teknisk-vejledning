@@ -1,0 +1,23 @@
+IT-teknisk vejledning
+
+Testen afvikles lokalt i en browser. 
+Der skal ikke installeres noget for at afvikle testen.
+Javascript skal være slået til i browseren for at testen kan afvikles.
+CD´en vil når den sættes i en maskine normalt starte testen automatisk i full screen. Fortryder man at man har startet testen kan man kun lukke vinduet med ctrl F4.
+
+Starter testen ikke automatik skal man starte filen "e-version af Vejledende Matematiktest for Voksne.htm" på CD´en.
+Bruger man internet explorer skal man herefter tillade javascript ved at højreklikke og sige "yes" til "allow blocked content". Bruger man firefox eller opera er der ingen problemer forbundet med "e-version af Vejledende Matematiktest for Voksne.htm"
+
+Testen kan afvikles uden scroll ned til skærmstørrelse 600 X 800 hvis den afvikles full screen. På udskriftsiden vil der dog være scroll. Hvis testen afvikles vha. "e-version af Vejledende Matematiktest for Voksne.htm" vil der være lidt scrolling flere steder.
+
+Den maskine testen afvikles på skal være tilsluttet en printer således at testresultatet kan udskrives.
+
+På testens første side skal man skrive fornavn, efternavn, cprnummer og testinstitution.
+Man kan kun komme videre hvis man taster mindst 10 tegn i cpr-nummeret (det er altså ikke nødvendigt det er et korrekt cprnummer) og mindst 2 tegn i for- og efter navn og mindst 3 tegn i testinstitution. Oplysningerne der indtastes gemmes ikke på PC´en, men de kommer med på den afsluttende udskrift.
+
+Hvis testen skal afvikles på papir skal filen "Papirudgave af Vejledende Matematiktest for Voksne.pdf" udskrives til hver testtager.
+Udskriften må godt være i sort hvid da ingen af opgaverne afhænger af at man kan se billederne i farver.
+
+Facitlisten kan udskrives fra filen "Facitliste til papirudgave.pdf".
+
+Hvordan testresultatet skal bedømmes vil fremgå af vejledningen.

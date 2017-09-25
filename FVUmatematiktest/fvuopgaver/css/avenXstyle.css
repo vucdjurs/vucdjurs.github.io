@@ -1,0 +1,389 @@
+BODY
+{
+    MARGIN-TOP: 0px;
+    BACKGROUND-IMAGE: url(images/bgFarve.gif);
+    MARGIN-LEFT: 0px;
+    MARGIN-RIGHT: 0px;
+    BACKGROUND-COLOR: #8cb4b4
+}
+H1
+{
+    FONT-SIZE: 14pt;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica
+}
+H2
+{
+    FONT-SIZE: 12pt;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica
+}
+SMALL
+{
+    FONT-SIZE: 8pt
+}
+.small
+{
+    FONT-SIZE: 8pt
+}
+STRONG
+{
+    FONT-WEIGHT: bold
+}
+P
+{
+    FONT-SIZE: 10pt;
+    LINE-HEIGHT: 14pt;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica
+}
+TD
+{
+    FONT-SIZE: 8pt;
+    LINE-HEIGHT: 14pt;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica
+}
+.textfield
+{
+    BORDER-RIGHT: thin ridge;
+    BORDER-TOP: thin ridge;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin ridge;
+    COLOR: #000000;
+    BORDER-BOTTOM: thin ridge;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #ffffff
+}
+.oneline
+{
+    BORDER-RIGHT: thin ridge;
+    BORDER-TOP: thin ridge;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin ridge;
+    WIDTH: 200px;
+    COLOR: #000000;
+    BORDER-BOTTOM: thin ridge;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #ffffff
+}
+.oneline_dim
+{
+    BORDER-RIGHT: thin ridge;
+    BORDER-TOP: thin ridge;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin ridge;
+    COLOR: gray;
+    BORDER-BOTTOM: thin ridge;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #ffffff
+}
+.noline
+{
+    BORDER-RIGHT: thin ridge;
+    BORDER-TOP: thin ridge;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin ridge;
+    COLOR: #000000;
+    BORDER-BOTTOM: thin ridge;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #ffffff
+}
+.button
+{
+    FONT-SIZE: 8pt;
+    WIDTH: 100px;
+    CURSOR: hand;
+    COLOR: #000000;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #d6d3ce;
+    TEXT-ALIGN: center
+}
+.button_wide
+{
+    FONT-SIZE: 8pt;
+    WIDTH: 170px;
+    CURSOR: hand;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #d6d3ce;
+    TEXT-ALIGN: center
+}
+.button_flex
+{
+    FONT-SIZE: 8pt;
+    CURSOR: hand;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #d6d3ce;
+    TEXT-ALIGN: center
+}
+.button_upload
+{
+    WIDTH: 80px
+}
+.textbox
+{
+    BORDER-RIGHT: thin ridge;
+    BORDER-TOP: thin ridge;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin ridge;
+    WIDTH: 460px;
+    COLOR: #000000;
+    BORDER-BOTTOM: thin ridge;
+    FONT-FAMILY: courier, monospace;
+    HEIGHT: 70px;
+    BACKGROUND-COLOR: #ffffff
+}
+.dropdown_wide
+{
+    BORDER-RIGHT: thin ridge;
+    BORDER-TOP: thin ridge;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin ridge;
+    WIDTH: 425px;
+    COLOR: #000000;
+    BORDER-BOTTOM: thin ridge;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #ffffff
+}
+.dropdown_medium
+{
+    BORDER-RIGHT: thin ridge;
+    BORDER-TOP: thin ridge;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin ridge;
+    WIDTH: 250px;
+    COLOR: #000000;
+    BORDER-BOTTOM: thin ridge;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #ffffff
+}
+.dropdown_narrow
+{
+    BORDER-RIGHT: thin ridge;
+    BORDER-TOP: thin ridge;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin ridge;
+    WIDTH: 140px;
+    COLOR: #000000;
+    BORDER-BOTTOM: thin ridge;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #ffffff
+}
+.dropdown_flex
+{
+    BORDER-RIGHT: thin ridge;
+    BORDER-TOP: thin ridge;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin ridge;
+    COLOR: #000000;
+    BORDER-BOTTOM: thin ridge;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #ffffff
+}
+.selectbox
+{
+    BORDER-RIGHT: thin ridge;
+    BORDER-TOP: thin ridge;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin ridge;
+    WIDTH: 200px;
+    COLOR: #000000;
+    BORDER-BOTTOM: thin ridge;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #ffffff
+}
+.selectbox_wide
+{
+    BORDER-RIGHT: thin ridge;
+    BORDER-TOP: thin ridge;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin ridge;
+    WIDTH: 300px;
+    COLOR: #000000;
+    BORDER-BOTTOM: thin ridge;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #ffffff
+}
+.td_svarmuligheder
+{
+    FONT-SIZE: 8pt;
+    WIDTH: 120px;
+    COLOR: #000000
+}
+.td_svarmuligheder_vert
+{
+    FONT-SIZE: 8pt;
+    WIDTH: 460px;
+    COLOR: #000000
+}
+.textcolor
+{
+    COLOR: #000000
+}
+A:link
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    COLOR: #cc3300;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    COLOR: #cc3300;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    TEXT-DECORATION: none
+}
+A:active
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    COLOR: #cc3300;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    TEXT-DECORATION: none
+}
+.header2
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    LEFT: 10px;
+    WIDTH: 240px;
+    COLOR: #ffffff;
+    LETTER-SPACING: 0.5pt;
+    POSITION: absolute;
+    TOP: 2px;
+    TEXT-ALIGN: left
+}
+A:hover
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    COLOR: #cc3300;
+    FONT-FAMILY: Verdana, Arial, charcoal, geneva, helvetica;
+    TEXT-DECORATION: underline
+}
+.celledit
+{
+    BORDER-RIGHT: thin dashed;
+    BORDER-TOP: thin dashed;
+    FONT-SIZE: 12pt;
+    BORDER-LEFT: thin dashed;
+    CURSOR: hand;
+    BORDER-BOTTOM: thin dashed;
+    FONT-FAMILY: Times New Roman
+}
+.titleeditbox
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-SIZE: 12pt;
+    BORDER-LEFT: medium none;
+    CURSOR: hand;
+    COLOR: #000000;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: verdana
+}
+.titleedit
+{
+    BORDER-RIGHT: thin;
+    BORDER-TOP: thin;
+    FONT-SIZE: 12pt;
+    BORDER-LEFT: thin;
+    CURSOR: hand;
+    COLOR: #000000;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: verdana
+}
+.overskrift_1
+{
+    FONT-WEIGHT: bold
+}
+.indhold_1
+{
+    PADDING-LEFT: 12px;
+    PADDING-TOP: 18px;
+    BACKGROUND-COLOR: white;
+    TEXT-ALIGN: left
+}
+.overskrifterListe
+{
+    BACKGROUND-COLOR: #eee3bd
+}
+
+.dropdown_large
+{
+    BORDER-RIGHT: thin ridge;
+    BORDER-TOP: thin ridge;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin ridge;
+    WIDTH: 700px;
+    COLOR: #000000;
+    BORDER-BOTTOM: thin ridge;
+    FONT-FAMILY: verdana, arial, charcoal, geneva, helvetica;
+    BACKGROUND-COLOR: #ffffff
+}
+
+.drsElement {
+
+           BORDER-RIGHT: #333 1px solid; BORDER-TOP: #333 1px solid; BORDER-LEFT: #333 1px solid; BORDER-BOTTOM: #333 1px solid; POSITION: absolute
+
+}
+
+.drsMoveHandle {
+
+           CURSOR: move; BORDER-BOTTOM: #666 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #ccc
+
+}
+
+.dragresize {
+
+           BORDER-RIGHT: #333 1px solid; BORDER-TOP: #333 1px solid; FONT-SIZE: 1px; BACKGROUND: #eee; BORDER-LEFT: #333 1px solid; WIDTH: 5px; BORDER-BOTTOM: #333 1px solid; POSITION: absolute; HEIGHT: 5px
+
+}
+
+.dragresize-tl {
+
+           LEFT: -8px; CURSOR: nw-resize; TOP: -8px
+
+}
+
+.dragresize-tm {
+
+           LEFT: 50%; MARGIN-LEFT: -4px; CURSOR: n-resize; TOP: -8px
+
+}
+
+.dragresize-tr {
+
+           RIGHT: -8px; CURSOR: ne-resize; TOP: -8px
+
+}
+
+.dragresize-ml {
+
+           MARGIN-TOP: -4px; LEFT: -8px; CURSOR: w-resize; TOP: 50%
+
+}
+
+.dragresize-mr {
+
+           MARGIN-TOP: -4px; RIGHT: -8px; CURSOR: e-resize; TOP: 50%
+
+}
+
+.dragresize-bl {
+
+           LEFT: -8px; CURSOR: sw-resize; BOTTOM: -8px
+
+}
+
+.dragresize-bm {
+
+           LEFT: 50%; MARGIN-LEFT: -4px; CURSOR: s-resize; BOTTOM: -8px
+
+}
+
+.dragresize-br {
+
+           RIGHT: -8px; CURSOR: se-resize; BOTTOM: -8px
+
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-2">
+    <meta NAME="lang" CONTENT="da">
+    <meta NAME="keywords" CONTENT="">
+    <meta NAME="description" CONTENT="">
+    <meta NAME="author" CONTENT="">
+    <meta NAME="generator" CONTENT="">
+    <meta NAME="DC.Title" CONTENT="">
+    <meta NAME="DC.Description" CONTENT="">
+    <meta NAME="DC.Date" CONTENT="2006-01-05" >
+    <meta NAME="DC.Language" CONTENT="dan">
+    <meta NAME="DC.Country" CONTENT="dk">
+
+    <style type="text/css" media="screen">
+        @import "ob.css";
+    </style>
+
+
+    <script type="text/javascript">
+    var isReady = false;
+    function doSaveAs() {
+            var filename = ' ';
+            filename = 'resultat'+parent.cpr+'.txt';
+        if (document.execCommand) {
+            if (isReady) {
+                document.execCommand("SaveAs",true,filename);
+            }
+        }
+    }
+    </script>
+
+<body onload="isReady=true">
+<div id="resultKeeper">
+    <a href="resultat.html"><img border="0" src="images/tilbageknap.gif" width="64" height="20"></a><img onClick="doSaveAs()" border="0" src="images/gemknap.gif" width="78" height="20"><script type="text/javascript">document.write(parent.cpr+',');document.write(parent.Resultater1()+',');document.write(parent.Resultater2());document.write(parent.Resultater3());</script>
+    <a Accesskey="p" href="javascript: this.print()"></a>
+    <a Accesskey="g" href="javascript: doSaveAs()"></a>
+    <a Accesskey="s" href="javascript: doSaveAs()"></a>
+    <a Accesskey="l" href="javascript: window.close(); return true"></a>
+    <a Accesskey="r" href="resultat.html"></a>
+    <a Accesskey="t" href="resultat.html"></a>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+

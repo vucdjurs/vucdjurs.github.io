@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+    <title>Vejledende L&aelig;setest for Voksne</title>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-2" >
+    <meta NAME="lang" CONTENT="da" >
+    <meta NAME="keywords" CONTENT="" >
+    <meta NAME="description" CONTENT="" >
+    <meta NAME="author" CONTENT="" >
+    <meta NAME="generator" CONTENT="" >
+    <meta NAME="DC.Title" CONTENT="" >
+    <meta NAME="DC.Description" CONTENT="" > 
+    <meta NAME="DC.Date" CONTENT="2006-01-05" >
+    <meta NAME="DC.Language" CONTENT="dan" >
+    <meta NAME="DC.Country" CONTENT="dk" >
+  	  
+    <style type="text/css" media="screen">
+	    @import "";			
+   </style>
+
+    <script type="text/javascript">
+        // Globale variable
+        var opgaveNr = 0;               // Nĺet hertil i opgaven
+        var testNr = 1;                 // Hvilken test er vi ved
+        var timerID = 0;                // Timer identity
+        var runningEksempler = true;    // Eksempler křrer
+        var soundRoot = "sounds/";      // Mappe til lydfiler
+        var imagesRoot = "images/";     // Mappe til billedfiler
+        var elevnavn = window.opener.document.getElementById("fornavn").value;
+        var efternavn = window.opener.document.getElementById("efternavn").value;
+        var cpr = window.opener.document.getElementById("cpr").value;
+        var usted = window.opener.document.getElementById("usted").value;
+        var testNavn = "Test af it-f&aelig;rdigheder"
+        var pswfound = false;
+
+        function HeaderText(txt) {
+            testNavn = txt
+            topvindue.window.location.href = "top.html";
+        }
+
+        function checkForHidden(psw) {
+            if (psw == "unic") {
+                pswfound = true;
+                indhold.document.getElementById('pswdiv').style.display = 'none';
+                indhold.document.getElementById('linkdiv').style.display = '';
+            }
+        }
+
+        function NextTest() {
+            runningEksempler = true;
+            opgaveNr = 0;
+            testNr++;
+            switch(testNr) {
+                case 1 : indhold.window.location.href = "del1x1.html";
+                         break;
+                case 2 : indhold.window.location.href = "indhold2x.html";
+                         break;
+                case 3 : indhold.window.location.href = "indhold3x.html";
+                         break;
+                case 4 : indhold.window.location.href = "resultat.html";
+                         break;
+            }
+        }
+        
+        if (typeof window.event != 'undefined')
+			document.onkeydown = function()
+			{
+				if (event.srcElement.tagName.toUpperCase() != 'INPUT')
+					return (event.keyCode != 8);
+			}
+		else
+			document.onkeypress = function(e)
+			{
+				if (e.target.nodeName.toUpperCase() != 'INPUT')
+					return (e.keyCode != 8);
+			}
+
+
+
+    </script>
+
+
+    
+<!--
+    <script language="JavaScript1.2" src="pretest.js" type="text/javascript"></script>
+-->
+    <script language="JavaScript1.2" src="test1.js" type="text/javascript"></script>
+    <script language="JavaScript1.2" src="test2.js" type="text/javascript"></script>
+    <script language="JavaScript1.2" src="test3.js" type="text/javascript"></script>
+
+</head>
+<frameset>
+      <frameset cols="*,750,*" border="0" framespacing="0">
+                <frame name="top" src="fill.html" title="" frameborder="0" scrolling="no" noresize>
+                <frameset rows="60,*,60" border="0" framespacing="0">
+                          <frame name="topvindue" src="top.html" title="" frameborder="0" scrolling="no" noresize>
+                          <frame name="indhold" src="del1x1.html" title="" frameborder="0" scrolling="auto">
+                          <frame name="bottom" src="bottom.html" title="" frameborder="0" scrolling="no" noresize>
+                </frameset>
+                <frame name="fill2" src="fill.html" title="" frameborder="0" scrolling="no" noresize>
+      </frameset>
+</frameset>
+
+</html>
+

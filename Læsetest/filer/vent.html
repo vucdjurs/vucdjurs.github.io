@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Vejledende L&aelig;setest for Voksne</title>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-2" >
+    <meta NAME="lang" CONTENT="da" >
+    <meta NAME="keywords" CONTENT="" >
+    <meta NAME="description" CONTENT="" >
+    <meta NAME="author" CONTENT="" >
+    <meta NAME="generator" CONTENT="" >
+    <meta NAME="DC.Title" CONTENT="" >
+    <meta NAME="DC.Description" CONTENT="" >
+    <meta NAME="DC.Date" CONTENT="2006-01-05" >
+    <meta NAME="DC.Language" CONTENT="dan" >
+    <meta NAME="DC.Country" CONTENT="dk" >
+
+    <style type="text/css" media="screen">
+	    @import "ob.css";
+   </style>
+
+    <BGSOUND id="BGSOUND_ID" LOOP=1 SRC="sounds/tom.wav"/>
+
+      <script type="text/javascript">
+          switch(parent.testNr) {
+              case 1 : document.getElementById("BGSOUND_ID").src = parent.soundRoot + "1_slut.mp3";
+                       break;
+              case 2 : document.getElementById("BGSOUND_ID").src = parent.soundRoot + "2_slut.mp3";
+                       break;
+              case 3 : document.getElementById("BGSOUND_ID").src = parent.soundRoot + "3_slut.mp3";
+                       break;
+              case 4 : document.getElementById("BGSOUND_ID").src = parent.soundRoot + "5_slut.mp3";
+                       break;
+          }
+          
+
+        if (typeof window.event != 'undefined')
+			document.onkeydown = function()
+			{
+				if (event.srcElement.tagName.toUpperCase() != 'INPUT')
+					return (event.keyCode != 8);
+			}
+		else
+			document.onkeypress = function(e)
+			{
+				if (e.target.nodeName.toUpperCase() != 'INPUT')
+					return (e.keyCode != 8);
+			}
+      </script>
+      <body>
+            <div id="contentKeeper">
+                <table>
+                    <tr>
+                        <td>
+                            <h2 align="center">Deltest <script type="text/javascript">document.write(parent.testNr)</script> er slut</h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="bottom">
+                <a id="pilen" href="javascript: parent.NextTest()"><img src="images/pil_hvid.gif" alt="Videre" title="Videre"></a>
+            </div>
+      </body>
+<script type="text/javascript">
+    parent.HeaderText("")
+    if (parent.timerID) {
+        clearTimeout(parent.timerID);
+        parent.timerID  = 0;
+    }
+    document.getElementById("pilen").focus();
+</script>
+</html>
+

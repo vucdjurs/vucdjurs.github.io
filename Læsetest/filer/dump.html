@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Vejledende L&aelig;setest for Voksne</title>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<meta NAME="lang" CONTENT="da">
+<meta NAME="keywords" CONTENT="">
+<meta NAME="description" CONTENT="">
+<meta NAME="author" CONTENT="">
+<meta NAME="generator" CONTENT="">
+<meta NAME="DC.Title" CONTENT="">
+<meta NAME="DC.Description" CONTENT="">
+<meta NAME="DC.Date" CONTENT="2006-01-05">
+<meta NAME="DC.Language" CONTENT="dan">
+<meta NAME="DC.Country" CONTENT="dk">
+
+<script type="text/javascript">
+var danishmonths = ["januar", "februar", "marts", "april", "maj", "juni",
+    "juli", "august", "september", "oktober", "november", "december"];
+
+function datostr() {
+    var dt = new Date();
+    return (new String (dt.getDate() + ". " + (danishmonths[dt.getMonth()]) + " " + dt.getFullYear()));
+}
+
+var isReady = false;
+
+if (typeof window.event != 'undefined')
+    document.onkeydown = function()
+    {
+        if (event.srcElement.tagName.toUpperCase() != 'INPUT')
+            return (event.keyCode != 8);
+    }
+else
+    document.onkeypress = function(e)
+    {
+        if (e.target.nodeName.toUpperCase() != 'INPUT')
+            return (e.keyCode != 8);
+    }
+    
+function doSaveAs() {
+    var filename = ' ';
+    filename = 'resultat'+parent.cpr+'_print.txt';
+    if (document.execCommand) {
+        if (isReady) {
+            document.execCommand("SaveAs",true,filename);
+        }
+    }
+}
+
+</script>
+
+<body onload="isReady=true">
+<p>
+<a href="resultat.html" accesskey="r"><- Tilbage til resultat</a>
+<a href="javascript:doSaveAs()" accesskey="g">Gem</a>
+</p>
+<h2>
+    Testresultat for 
+    <script type="text/javascript">document.write(parent.elevnavn)</script> 
+    <script type="text/javascript">document.write(parent.efternavn)</script>,
+    <script type="text/javascript">document.write(parent.cpr)</script></h2>
+<h3>
+    Dato: 
+    <script type="text/javascript">document.write(datostr())</script></h3>
+<h3>
+    Institution: 
+    <script type="text/javascript">document.write(parent.usted)</script></h3>
+<br />
+<script type="text/javascript">
+    document.write("Test 1:&nbsp;&nbsp;");
+    document.write(parent.Test1Korrekte());
+    document.write("&nbsp;&nbsp;&nbsp;Tid:&nbsp;&nbsp;");
+    document.write(parent.Test1Tidsforbrug());
+    document.write("<br>");
+    document.write("Test 2:&nbsp;&nbsp;");
+    document.write(parent.Test5Korrekte());
+    document.write("&nbsp;&nbsp;("); 
+    document.write(parent.Test5Kontekst());
+    document.write("&nbsp;i Kontekst og&nbsp;");
+    document.write(parent.Test5Morfo());
+    document.write("&nbsp;i Morfologisk");
+    document.write(")<br>");
+    document.write("Screeningsresultat:&nbsp;&nbsp;");
+    document.write((parent.Test1Korrekte()*0.5)+parent.Test5Korrekte());
+    document.write("<br>");
+</script>
+<h2>Afgivne svar i Test 2</h2>
+<script type="text/javascript">
+        for (i = 0; i < parent.test5OpgaveListe.length; i++) {
+        document.write("Opgave&nbsp;");
+        if (i<9)
+        {
+            document.write("&nbsp;");
+        }
+        document.write(i + 1);
+        document.write("&nbsp;&nbsp;Svar:&nbsp;");
+        document.write(parent.test5OpgaveListe[i].pupil);
+        document.write("&nbsp;&nbsp;&nbsp;(");
+        document.write(parent.test5OpgaveListe[i].word1);
+        if (parent.test5OpgaveListe[i].word1type == 'k' ) {
+            document.write("*");
+        }
+        if (parent.test5OpgaveListe[i].word2 != "") {
+            document.write(",&nbsp;")
+        }
+        document.write(parent.test5OpgaveListe[i].word2);
+        if (parent.test5OpgaveListe[i].word2type == 'k' ) {
+            document.write("*");
+        }
+        document.write(")<br />");
+    }
+</script>
+    <a Accesskey="p" href="javascript: this.print()"></a>
+    <a Accesskey="l" href="javascript: window.close(); return true"></a>
+    <a Accesskey="g" href="javascript: doSaveAs()"></a>
+    <a Accesskey="s" href="javascript: doSaveAs()"></a>
+    <a Accesskey="l" href="javascript: window.close(); return true"></a>
+    <a Accesskey="r" href="resultat.html"></a>
+    <a Accesskey="t" href="resultat.html"></a>
+</body>
+</html>

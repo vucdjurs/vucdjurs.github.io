@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Resultat af Vejledende L&aelig;setest for Voksne</title>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-2">
+    <meta NAME="lang" CONTENT="da">
+    <meta NAME="keywords" CONTENT="">
+    <meta NAME="description" CONTENT="">
+    <meta NAME="author" CONTENT="">
+    <meta NAME="generator" CONTENT="">
+    <meta NAME="DC.Title" CONTENT="">
+    <meta NAME="DC.Description" CONTENT="">
+    <meta NAME="DC.Date" CONTENT="2006-01-05" >
+    <meta NAME="DC.Language" CONTENT="dan">
+    <meta NAME="DC.Country" CONTENT="dk">
+    
+    <style type="text/css" media="screen">
+        @import "ob.css";
+    </style>
+    
+		<style type="text/css" media="print">
+			@import "ob-print.css";
+		</style>
+		
+    <script type="text/javascript">
+        var danishmonths = ["januar", "februar", "marts", "april", "maj", "juni",
+            "juli", "august", "september", "oktober", "november", "december"];
+
+        function datostr() {
+            var dt = new Date();
+            return (new String (dt.getDate()+". "+(danishmonths[dt.getMonth()])+" "+dt.getFullYear()));
+        }
+
+    function pointres(o1,o2) {
+      return ((o1/2)+o2);
+    }
+    
+    var isReady = false;
+    function doSaveAs() {
+        if (document.execCommand) {
+            if (isReady) {
+                document.execCommand("SaveAs");
+            }
+        }
+    }
+        
+        if (typeof window.event != 'undefined')
+			document.onkeydown = function()
+			{
+				if (event.srcElement.tagName.toUpperCase() != 'INPUT')
+					return (event.keyCode != 8);
+			}
+		else
+			document.onkeypress = function(e)
+			{
+				if (e.target.nodeName.toUpperCase() != 'INPUT')
+					return (e.keyCode != 8);
+			}
+
+    </script>
+    <style type="text/css">
+<!--
+table.detaljer {
+padding: 1px;
+width: 60%;
+border: 0px none #111111;
+border-collapse: collapse;
+border-top-color:#111111; border-right-color:#111111; border-bottom-color:#111111; border-left-color:#111111;
+text-align: center;
+margin-left: auto; margin-right: auto;
+}
+tr.trhead {
+line-height: 2em;
+font-size:1.5em;
+vertical-align: bottom;
+font-weight: bold;
+padding-right: 2em;
+padding-left: 2em;
+}
+tr.odd {
+background-color: #ffffff;
+}
+tr.even {
+background-color: #808080;
+}
+td {
+padding: 1px;
+font-size:1.5em;
+}
+-->
+
+</style>
+
+</head>
+		<body onload="isReady=true">
+			<div id="resultKeeper">
+			<h1 class="print-only">Vejledende L&aelig;setest for Voksne</h1>
+				<h2>
+					Testresultat for
+<script type="text/javascript">document.write(parent.elevnavn)</script> 
+<script type="text/javascript">document.write(parent.efternavn)</script>,
+<script type="text/javascript">document.write(parent.cpr)</script></h2>
+				<h3>
+					Dato:
+<script type="text/javascript">document.write(datostr())</script></h3>
+				<h3>
+					Institution:
+<script type="text/javascript">document.write(parent.usted)</script></h3>
+				<h2>Resultat af deltest</h2>
+				<table class="detaljer" border="0" id="table1" cellspacing="0" cellpadding="0" >
+					<tr>
+						<td style="text-align:left;">
+							Deltest 1 - Tekstl&aelig;sning:
+						</td>
+						<td >
+<script type="text/javascript">document.write(parent.Test1Korrekte())</script>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left;">
+							Deltest 2 - Ordforr&aring;d:
+						</td>
+						<td>
+<script type="text/javascript">document.write(parent.Test2Korrekte())</script>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left;">
+							Deltest 3 - Ordl&aelig;sning:
+						</td>
+						<td>
+<script type="text/javascript">document.write(parent.Test3Korrekte())</script>
+						</td>
+					</tr>
+				</table>
+				<hr class="display-only"/>
+				
+				<p align="center" class="display-only">
+					<span class="visiblelink">
+						<a href="credits.html">Om <i>Vejledende L&aelig;setest for Voksne</i></a>
+					</span>
+				</p>
+                <p align="center" class="display-only">
+                <div id="pswdiv" align="center" style="display:none">
+                    <table class="detaljer" border="0" id="table1" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center" width="150"><input type="password" name="hiddenlinks" size="20" onkeypress="if ((event.which ? event.which : event.keyCode) == 13) parent.checkForHidden(this.value)"></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="linkdiv" align="center" class="display-only" style="display:none">
+                                    <span class="visiblelink">
+                                        <a href="javascript: this.print()">Udskriv resultat</a><br>
+<!--                                        
+                                        <a href="udvidet.html">Gem resultat</a><br>
+-->
+                                        <a href="javascript: parent.window.close()">Luk resultatvinduet</a>
+                                    </span>
+                </div>
+                </p>
+				<h2 class="print-only">Eventuelle bem&aelig;rkninger fra testleder</h2>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+				<hr class="print-only"/>
+
+                <p class="print-only" style="page-break-before:  always">
+                    <table class="detaljer" border="1" cellspacing="0" cellpadding="0">
+                        <tr class="trhead">
+                            <th>Opgave</th>
+                            <th>Deltest&nbsp;1</th>
+                            <th>Deltest&nbsp;2</th>
+                            <th>Deltest&nbsp;3</th>
+                        </tr>
+                      <script type="text/javascript">
+                            var j = 0;
+                            for (i = 0; i < 41; i++) {
+                            	j = i % 2;
+                            	if (j==1) {
+                                	document.write("<tr class='odd'>");
+                                } else {
+                                	document.write("<tr class='even'>");
+                                }
+
+                            document.write("<tr>");
+                            document.write("<td>");
+                            document.write(i + 1);
+                            document.write("</td>");
+                            document.write("<td>");
+
+                            document.write(parent.test1OpgaveListe[i+1].pupil);
+                            if (parent.test1OpgaveListe[i+1].pupil != parent.test1OpgaveListe[i+1].answer ) document.write("*");
+
+                            document.write("</td>");
+                            document.write("<td>");
+                            if (i < 37) {
+                                document.write(parent.test2OpgaveListe[i].pupil);
+                                if (parent.test2OpgaveListe[i].pupil != parent.test2OpgaveListe[i].answer ) document.write("*");
+                            } else {
+                                 document.write("&nbsp;");
+                            }
+                            document.write("</td>");
+                            document.write("<td>");
+
+                            if (i < 38) {
+                                document.write(parent.test3OpgaveListe[i].pupil);
+                                if (parent.test3OpgaveListe[i].pupil != parent.test3OpgaveListe[i].answer ) document.write("*");
+                            } else {
+                                 document.write("&nbsp;");
+                            }
+                            document.write("</td>");
+                            document.write("</tr>");
+                            }
+                    </script>
+                    </table>
+                </p>
+            </div>
+            <span class="visiblelink">
+                <a Accesskey="p" href="javascript: this.print()"></a>
+                <a Accesskey="l" href="javascript: window.close(); return true"></a>
+                <a Accesskey="d" href="udvidet.html"></a>
+                <a Accesskey="u" href="udvidet.html"></a>
+
+            </span>
+            <script type="text/javascript">
+                if (parent.pswfound) {
+                    document.getElementById('pswdiv').style.display = 'none';
+                    document.getElementById('linkdiv').style.display = '';
+                } else {
+                    document.getElementById('pswdiv').style.display = '';
+                    document.getElementById('linkdiv').style.display = 'none';
+                }
+            </script>
+		</body>
+</html>
+
+
+    
+
+
+
+

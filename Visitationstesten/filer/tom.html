@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Visitationstest</title>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-2">
+    <meta NAME="lang" CONTENT="da">
+    <meta NAME="keywords" CONTENT="">
+    <meta NAME="description" CONTENT="">
+    <meta NAME="author" CONTENT="">
+    <meta NAME="generator" CONTENT="">
+    <meta NAME="DC.Title" CONTENT="">
+    <meta NAME="DC.Description" CONTENT="">
+    <meta NAME="DC.Date" CONTENT="2006-01-05" >
+    <meta NAME="DC.Language" CONTENT="dan">
+    <meta NAME="DC.Country" CONTENT="dk">
+
+    <style type="text/css" media="screen">
+        @import "ob.css";
+    </style>
+    <BGSOUND id="BGSOUND_ID" LOOP=1 SRC="sounds/tom.wav"/>
+    <script type="text/javascript">
+
+        switch(parent.testNr) {
+            case 1 : document.getElementById("BGSOUND_ID").src = "sounds/1_x4.mp3";
+                     break;
+            case 2 : document.getElementById("BGSOUND_ID").src = "sounds/4_x2.mp3";
+                     break;
+            case 3 : document.getElementById("BGSOUND_ID").src = "sounds/3_x3.mp3";
+                     break;
+            case 4 : document.getElementById("BGSOUND_ID").src = "sounds/ding.mp3";
+                     break;
+        }
+        
+        if (typeof window.event != 'undefined')
+			document.onkeydown = function()
+			{
+				if (event.srcElement.tagName.toUpperCase() != 'INPUT')
+					return (event.keyCode != 8);
+			}
+		else
+			document.onkeypress = function(e)
+			{
+				if (e.target.nodeName.toUpperCase() != 'INPUT')
+					return (e.keyCode != 8);
+			}
+
+    </script>
+
+<body>
+      <div id="contentKeeper">
+          <table>
+              <tr>
+                  <td>
+                      <h2 align="center">LYT !</h2>
+                  </td>
+              </tr>
+          </table>
+      </div>
+<div id="bottom">
+    <script type="text/javascript">
+        var HTMLout = "";
+        switch(parent.testNr) {
+            case 1 : HTMLout = "<a href=\"javascript: parent.Test1MoveOn()\">";
+                     break;
+            case 2 : HTMLout = "<a href=\"javascript: parent.Test4MoveOn()\">";
+                     break;
+            case 3 : HTMLout = "<a href=\"javascript: parent.Test3MoveOn()\">";
+                     break;
+            case 4 : HTMLout = "<a href=\"javascript: parent.Test5MoveOn()\">";
+                     break;
+        }
+        HTMLout += "<img src=\"images/pil_hvid.gif\" alt=\"Videre\" title=\"Videre\">";
+        HTMLout += "</a>";
+        document.writeln(HTMLout);
+    </script>
+
+</div>
+</body>
+</html>
+

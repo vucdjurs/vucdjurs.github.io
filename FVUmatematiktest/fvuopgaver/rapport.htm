@@ -1,0 +1,337 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="da">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link media=screen href="css/testopgave.css" type=text/css rel=stylesheet>
+<title>Opstart</title>
+<script type="text/javascript" src="javascript/kontrol.js"></script>
+<script type="text/javascript" src="javascript/opset.js"></script>
+<script language="javascript">
+Testnavn="Vejledende Matematiktest for Voksne.";//"Test til FVU-matematik"; 
+    //Klasse = "1hgb" 
+    Skole = "IBC"
+	cprnummer = "??????????"
+    Elevnavn= "Bo Klercke"
+Antalopgaver = 43;//66;
+tidspunkt=""
+Sttid = new Date();
+Sltid = new Date();
+TMonth = new Array('Januar','Februar','Marts','April','Maj','Juni','Juli','August','September','Oktober','November','December');
+mm2 = Sltid.getMonth();
+dd2 = Sltid.getDate();
+yy2 = Sltid.getFullYear();//Sltid.getYear();
+Svartekst = new Array();
+Points = new Array();
+Vegt = new Array();
+Vegtet = new Array();
+opgnavne = new Array();
+afleveret = new Array();
+tidsforbrug = new Array();
+Filnavne = new Array();
+Korrektsvar = new Array();
+Gruppenavne = new Array();
+Gruppenumre = new Array();
+Gruppenavne[1] = "1. Sproget i matematik";
+Gruppenavne[2] = "2. Tal og regning";
+Gruppenavne[3] = "3. Opgaver fra FVU-matematik trin 2";// det højeste trin ";
+/*
+Gruppenumre[1] = "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31";
+Gruppenumre[2] = "33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56";
+Gruppenumre[3] = "58,59,60,61,62,63,64";
+*/
+/*
+Gruppenumre[1] = "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32";
+Gruppenumre[2] = "35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58";
+Gruppenumre[3] = "60,61,62,63,64,65,66";
+*/
+Gruppenumre[1] = "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19";
+Gruppenumre[2] = "22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38";
+Gruppenumre[3] = "40,41,42,43";
+
+set = new Array();
+for (i=1;i<=Antalopgaver;i++){set[i] =0;}
+AfgivetSvar = new Array();
+for (i=1;i<=Antalopgaver;i++){AfgivetSvar[i] ='';}
+Vegt[1]=0;
+Vegt[2]=0;
+Vegt[3]=1;
+Vegt[4]=1;
+Vegt[5]=1;
+Vegt[6]=1;
+Vegt[7]=1;
+Vegt[8]=1;
+Vegt[9]=1;
+Vegt[10]=1;
+Vegt[11]=1;
+Vegt[12]=1;
+Vegt[13]=1;
+Vegt[14]=1;
+Vegt[15]=1;
+Vegt[16]=1;
+Vegt[17]=1;
+Vegt[18]=1;
+Vegt[19]=1;
+Vegt[20]=0;
+Vegt[21]=0;
+Vegt[22]=1;
+Vegt[23]=1;
+Vegt[24]=1;
+Vegt[25]=1;
+Vegt[26]=1;
+Vegt[27]=1;
+Vegt[28]=1;
+Vegt[29]=1;
+Vegt[30]=1;
+Vegt[31]=1;
+Vegt[32]=1;
+Vegt[33]=1;
+Vegt[34]=1;
+Vegt[35]=1;
+Vegt[36]=1;
+Vegt[37]=1;
+Vegt[38]=1;
+Vegt[39]=0;
+Vegt[40]=1;
+Vegt[41]=1;
+Vegt[42]=1;
+Vegt[43]=1;
+
+for (i=1;i<=Antalopgaver;i++){Vegtet[i] =0}
+for (i=1;i<=Antalopgaver;i++){Points[i] =0}
+for (i=1;i<=Antalopgaver;i++){afleveret[i] =''}
+for (i=1;i<=Antalopgaver;i++){Svartekst[i] =''}
+for (i=1;i<=Antalopgaver;i++){tidsforbrug[i] =0}
+
+opgnavne[1]='';
+opgnavne[2]='';
+opgnavne[3]='';
+opgnavne[4]='';
+opgnavne[5]='';
+opgnavne[6]='';
+opgnavne[7]='';
+opgnavne[8]='';
+opgnavne[9]='';
+opgnavne[10]='';
+opgnavne[11]='';
+opgnavne[12]='';
+opgnavne[13]='';
+opgnavne[14]='';
+opgnavne[15]='';
+opgnavne[16]='';
+opgnavne[17]='';
+opgnavne[18]='';
+opgnavne[19]='';
+opgnavne[20]='';
+opgnavne[21]='';
+opgnavne[22]='';
+opgnavne[23]='';
+opgnavne[24]='';
+opgnavne[25]='';
+opgnavne[26]='';
+opgnavne[27]='';
+opgnavne[28]='';
+opgnavne[29]='';
+opgnavne[30]='';
+opgnavne[31]='';
+opgnavne[32]='';
+opgnavne[33]='';
+opgnavne[34]='';
+opgnavne[35]='';
+opgnavne[36]='';
+opgnavne[37]='';
+opgnavne[38]='';
+opgnavne[39]='';
+opgnavne[40]='';
+opgnavne[41]='';
+opgnavne[42]='';
+opgnavne[43]='';
+
+Linktekst="";
+Filnavne[1]='0101/010100.htm';//del 1 - introduktion
+Filnavne[2]='../../fvuopgaver/0101/010001.htm';//del 1 - demo-opgave
+Filnavne[3]='../../fvuopgaver/0101/010131-1.htm';//del 1 - opgave 1
+Filnavne[4]='../../fvuopgaver/0101/010131-3.htm';//del 1 - opgave 3
+Filnavne[5]='../../fvuopgaver/0101/010132-3.htm';//del 1 - opgave 7
+Filnavne[6]='../../fvuopgaver/0101/010133-1.htm';//del 1 - opgave 9
+Filnavne[7]='../../fvuopgaver/0101/010133-3.htm';//del 1 - opgave 11
+Filnavne[8]='../../fvuopgaver/0101/010133-4.htm';//del 1 - opgave 12
+Filnavne[9]='../../fvuopgaver/0101/010134-1.htm';//del 1 - opgave 13
+Filnavne[10]='../../fvuopgaver/0101/010134-3.htm';//del 1 - opgave 15
+Filnavne[11]='../../fvuopgaver/0101/010134-4.htm';//del 1 - opgave 16
+Filnavne[12]='../../fvuopgaver/0101/010135-2.htm';//del 1 - opgave 18
+Filnavne[13]='../../fvuopgaver/0101/010135-4.htm';//del 1 - opgave 20
+Filnavne[14]='../../fvuopgaver/0101/010136-1.htm';//del 1 - opgave 21
+Filnavne[15]='../../fvuopgaver/0101/010136-3.htm';//del 1 - opgave 23
+Filnavne[16]='../../fvuopgaver/0101/010137-2.htm';//del 1 - opgave 26
+Filnavne[17]='../../fvuopgaver/0101/010137-3.htm';//del 1 - opgave 27
+Filnavne[18]='../../fvuopgaver/0101/010138-3.htm';//del 1 - opgave 29
+Filnavne[19]='../../fvuopgaver/0101/010138-4.htm';//del 1 - opgave 30
+
+Filnavne[20]='../../fvuopgaver/0102/010200.htm';//del 2 - mellemtekst
+Filnavne[21]='../../fvuopgaver/0102/010002.htm';//del 2 - demo opgave
+Filnavne[22]='../../fvuopgaver/0102/010203.htm';//del 2 - opgave 3
+Filnavne[23]='../../fvuopgaver/0102/010206.htm';//del 2 - opgave 6
+Filnavne[24]='../../fvuopgaver/0102/010207.htm';//del 2 - opgave 7
+Filnavne[25]='../../fvuopgaver/0102/010208.htm';//del 2 - opgave 8
+Filnavne[26]='../../fvuopgaver/0102/010209.htm';//del 2 - opgave 9
+Filnavne[27]='../../fvuopgaver/0102/010210.htm';//del 2 - opgave 10
+Filnavne[28]='../../fvuopgaver/0102/010211.htm';//del 2 - opgave 11
+Filnavne[29]='../../fvuopgaver/0102/010212.htm';//del 2 - opgave 12
+Filnavne[30]='../../fvuopgaver/0102/010213.htm';//del 2 - opgave 13
+Filnavne[31]='../../fvuopgaver/0102/010214.htm';//del 2 - opgave 14
+Filnavne[32]='../../fvuopgaver/0102/010215.htm';//del 2 - opgave 15
+Filnavne[33]='../../fvuopgaver/0102/010217.htm';//del 2 - opgave 16
+Filnavne[34]='../../fvuopgaver/0102/010218.htm';//del 2 - opgave 17
+Filnavne[35]='../../fvuopgaver/0102/010221.htm';//del 2 - opgave 20
+Filnavne[36]='../../fvuopgaver/0102/010222.htm';//del 2 - opgave 21
+Filnavne[37]='../../fvuopgaver/0102/010223.htm';//del 2 - opgave 22
+Filnavne[38]='../../fvuopgaver/0102/010224.htm';//del 2 - opgave 23
+
+Filnavne[39]='../../fvuopgaver/0103/010300.htm';//del 3 - mellemtekst
+Filnavne[40]='../../fvuopgaver/0103/010327.htm';//del 2 - opgave 2
+Filnavne[41]='../../fvuopgaver/0103/010328.htm';//del 2 - opgave 3
+Filnavne[42]='../../fvuopgaver/0103/010330.htm';//del 2 - opgave 5
+Filnavne[43]='../../fvuopgaver/0103/010332.htm';//del 2 - opgave 7
+/*
+Filnavne[44]='../../fvuopgaver/0102/010210.htm';//del 2 - opgave 10
+Filnavne[45]='../../fvuopgaver/0102/010211.htm';//del 2 - opgave 11
+Filnavne[46]='../../fvuopgaver/0102/010212.htm';//del 2 - opgave 12
+Filnavne[47]='../../fvuopgaver/0102/010213.htm';//del 2 - opgave 13
+Filnavne[48]='../../fvuopgaver/0102/010214.htm';//del 2 - opgave 14
+Filnavne[49]='../../fvuopgaver/0102/010215.htm';//del 2 - opgave 15
+Filnavne[50]='../../fvuopgaver/0102/010217.htm';//del 2 - opgave 16
+Filnavne[51]='../../fvuopgaver/0102/010218.htm';//del 2 - opgave 17
+Filnavne[52]='../../fvuopgaver/0102/010219.htm';//del 2 - opgave 18
+Filnavne[53]='../../fvuopgaver/0102/010220.htm';//del 2 - opgave 19
+Filnavne[54]='../../fvuopgaver/0102/010221.htm';//del 2 - opgave 20
+Filnavne[55]='../../fvuopgaver/0102/010222.htm';//del 2 - opgave 21
+Filnavne[56]='../../fvuopgaver/0102/010223.htm';//del 2 - opgave 22
+Filnavne[57]='../../fvuopgaver/0102/010224.htm';//del 2 - opgave 23
+Filnavne[58]='../../fvuopgaver/0102/010225.htm';//del 2 - opgave 24
+Filnavne[59]='../../fvuopgaver/0103/010300.htm';//del 3 - mellemtekst
+Filnavne[60]='../../fvuopgaver/0103/010326.htm';//del 3 - opgave 1
+Filnavne[61]='../../fvuopgaver/0103/010327.htm';//del 3 - opgave 2
+Filnavne[62]='../../fvuopgaver/0103/010328.htm';//del 3 - opgave 3
+Filnavne[63]='../../fvuopgaver/0103/010329.htm';//del 3 - opgave 4
+Filnavne[64]='../../fvuopgaver/0103/010330.htm';//del 3 - opgave 5
+Filnavne[65]='../../fvuopgaver/0103/010331.htm';//del 3 - opgave 6
+Filnavne[66]='../../fvuopgaver/0103/010332.htm';//del 3 - opgave 7
+*/
+Korrektsvar[1]='';
+Korrektsvar[2]='';
+Korrektsvar[3]='1'; 
+//Korrektsvar[4]='0';
+Korrektsvar[4]='3';
+//Korrektsvar[6]='2';
+//Korrektsvar[7]='0';
+//Korrektsvar[8]='2';
+Korrektsvar[5]='3';
+//Korrektsvar[10]='1';
+Korrektsvar[6]='3';
+//Korrektsvar[12]='1';
+Korrektsvar[7]='0';
+Korrektsvar[8]='2';
+Korrektsvar[9]='2';
+//Korrektsvar[16]='0';
+Korrektsvar[10]='1';
+Korrektsvar[11]='3';
+//Korrektsvar[19]='2';
+Korrektsvar[12]='1';
+//Korrektsvar[21]='0';
+Korrektsvar[13]='3';
+Korrektsvar[14]='1';
+//Korrektsvar[24]='3';
+Korrektsvar[15]='2';
+//Korrektsvar[26]='0';
+//Korrektsvar[27]='2';
+Korrektsvar[16]='2';
+Korrektsvar[17]='0';
+//Korrektsvar[30]='0';
+Korrektsvar[18]='2';
+Korrektsvar[19]='3';
+Korrektsvar[20]='';
+Korrektsvar[21]='';
+//Korrektsvar[35]='0';
+//Korrektsvar[36]='2';
+Korrektsvar[22]='1';
+//Korrektsvar[38]='1';
+//Korrektsvar[39]='0';
+Korrektsvar[23]='0';
+Korrektsvar[24]='0';
+Korrektsvar[25]='1';
+Korrektsvar[26]='2';
+Korrektsvar[27]='3';
+Korrektsvar[28]='1';
+Korrektsvar[29]='2';
+Korrektsvar[30]='2';
+Korrektsvar[31]='3';
+Korrektsvar[32]='2';
+Korrektsvar[33]='1';
+Korrektsvar[34]='2';
+//Korrektsvar[52]='1';
+//Korrektsvar[53]='2';
+Korrektsvar[35]='0';
+Korrektsvar[36]='2';
+Korrektsvar[37]='1';
+Korrektsvar[38]='1';
+//Korrektsvar[58]='1';
+Korrektsvar[39]='';
+//Korrektsvar[60]='2';
+Korrektsvar[40]='1';
+Korrektsvar[41]='1';
+//Korrektsvar[63]='1';
+Korrektsvar[42]='0';
+//Korrektsvar[65]='2';
+Korrektsvar[43]='3';
+Aktuelopgave=0;
+
+function login(){//alert('login');
+//    Fornavn = parent.hovedramme.getElementById('ForNavn').value
+//    Fornavn = parent.hovedramme.besvarelsesform.ForNavn.value
+    Fornavn = parent.hovedramme.document.getElementById('ForNavn').value
+//    Efternavn = parent.hovedramme.besvarelsesform.EfterNavn.value
+    Efternavn = parent.hovedramme.document.getElementById('EfterNavn').value
+//    Skole = parent.hovedramme.besvarelsesform.Skole.value    
+    Skole = parent.hovedramme.document.getElementById('Skole').value    
+//	cprnummer = parent.hovedramme.besvarelsesform.cprnummer.value
+	cprnummer = parent.hovedramme.document.getElementById('cprnummer').value
+    Elevnavn = Fornavn.toUpperCase() + " " + Efternavn.toUpperCase()
+if (Fornavn.length < 2){
+    alert("Der skal være mindst 2 tegn i dit fornavn")
+//    parent.hovedramme.besvarelsesform.ForNavn.focus()
+    parent.hovedramme.document.getElementById('ForNavn').focus()
+//    parent.hovedramme.besvarelsesform.submitknap.disabled=false
+    parent.hovedramme.document.getElementById('submitknap').disabled=false
+    return;
+    }
+if (Efternavn.length < 2){
+    alert("Der skal være mindst 2 tegn i dit efternavn")
+//    parent.hovedramme.besvarelsesform.EfterNavn.focus()
+    parent.hovedramme.document.getElementById('EfterNavn').focus()
+//    parent.hovedramme.besvarelsesform.submitknap.disabled=false
+    parent.hovedramme.document.getElementById('submitknap').disabled=false
+    return;
+    }    
+if (Skole.length < 3){
+    alert("Der skal være mindst 3 tegn i navnet på skolen")
+//    parent.hovedramme.besvarelsesform.Skole.focus()
+    parent.hovedramme.document.getElementById('Skole').focus()
+//    parent.hovedramme.besvarelsesform.submitknap.disabled=false
+    parent.hovedramme.document.getElementById('submitknap').disabled=false
+    return;
+    }
+if (cprnummer.length<10){
+	alert("Der skal være mindst 10 tegn i dit CPR-nummer")
+//    parent.hovedramme.besvarelsesform.cprnummer.focus()
+    parent.hovedramme.document.getElementById('cprnummer').focus()
+//    parent.hovedramme.besvarelsesform.submitknap.disabled=false
+    parent.hovedramme.document.getElementById('submitknap').disabled=false
+    return;
+    };
+    skiftopg()
+}
+</script>
+</head>
+</body>
+</html>

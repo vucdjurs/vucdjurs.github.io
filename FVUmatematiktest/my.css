@@ -1,0 +1,170 @@
+  .button {BORDER-RIGHT: #6f92a8 1px solid; BORDER-TOP: #6f92a8 1px solid; FONT-SIZE: 10pt; MARGIN: 0px; BORDER-LEFT: #6f92a8 1px solid; COLOR: #6f92a8; BORDER-BOTTOM: #6f92a8 1px solid; FONT-FAMILY: sans-serif, Verdana, Arial}
+  
+  body,p,td
+{
+	background-color:#ffffff;
+	font-family:Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	line-height:24px;	
+}
+.text
+{
+    padding:0px;
+}
+
+.textp {
+	background-color:#d4eeee; 
+    color:#000000;
+   padding:0px;
+    z-index : 1;
+	font-family:Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	line-height:50px;
+	height:30px;
+   cursor: pointer;
+   border:0.5px solid #23A3B0;
+  }
+
+
+.luft
+{
+	width:30px;
+}
+
+.overskrift
+{
+background-color:#ffffff;
+font-family:Verdana, Arial, Helvetica, Sans-Serif;
+font-size:21px;
+line-height:30px;
+color:#000000;
+width:100%;
+vertical-align:bottom;
+visibility: hidden;
+}
+
+.overskrift1
+{
+background-color:#ffffff;
+font-family:Verdana, Arial, Helvetica, Sans-Serif;
+font-size:12px;
+line-height:30px;
+color:#000000;
+width:100%;
+vertical-align:bottom;
+}
+
+
+.boxwidth
+{
+font-size: 14px;
+line-height:10px;/*15px;*/
+color:#000000;
+padding-left:10px;
+padding-right:10px;
+font-family: verdana, arial, helvetica,sans-serif;
+border-style: solid; 
+border-color: #23A3B0;/*#58B9C3; */
+border-width: 1px;
+
+}
+
+.pointer 
+{
+    cursor:pointer;
+}
+
+.height10
+{
+    height : 10px;
+}
+
+.height20
+{
+    height : 30px;
+}
+
+.height30
+{
+    height : 30px;
+}
+	
+.opgaveindhold
+{
+	background-color:#ffffff;
+	font-family:Verdana, Arial, Helvetica, Sans-Serif;
+	font-size:12px;
+	line-height:15px;
+	color:#000000;
+}
+
+.opgaveformulering
+{
+	background-color:#ffffff;
+	font-family:Verdana, Arial, Helvetica, Sans-Serif;
+	font-size:12px;
+	line-height:15px;
+	font-weight: bold;
+	color:#000000;
+	vertical-align:bottom;
+}
+
+.opgaveformulering1
+{
+	background-color:#ffffff;
+	font-family:Verdana, Arial, Helvetica, Sans-Serif;
+	font-size:12px;
+	line-height:15px;
+	color:#000000;
+	vertical-align:bottom;
+}
+
+.hrBlue
+{
+	color:#23A3B0; 
+	height:1px;
+}
+
+.mystyleC7D5DC
+{
+	background-color:#C7D5DC;
+}
+
+.mystyleFF6666
+{
+	background-color:#FF6666;
+}
+.mystyleffff33
+{
+	background-color:#ffff33;
+}
+.mystyleccffcc
+{
+	background-color:#ccffcc;
+}
+
+.sidefod
+{
+	background-color: #d4eeee; 
+	height:20px;
+	color:#000000;
+	text-align:right;
+	vertical-align:middle;
+}
+.sidefod_img
+{
+	background-color: #d4eeee; 
+	height:20px;
+	padding-left:7px;
+	text-align:left;
+}
+.sidefod_vent
+{
+	background-color: #d4eeee; 
+	font-weight: normal;
+	font-size: 10px;
+	color:#000000;
+	text-align:right;
+	vertical-align:middle;
+	padding-right:5px;
+}

@@ -1,0 +1,5 @@
+[autorun]
+open=winopen iexplore.exe -k $EXEDIR$\e-version af Vejledende Matematiktest for Voksne.hta
+icon=fvu.ico
+
+
